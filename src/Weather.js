@@ -11,6 +11,7 @@ export default function Weather() {
               type="search"
               placeholder="Enter a city.."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
@@ -28,13 +29,15 @@ export default function Weather() {
         <li>Sunny</li>
       </ul>
 
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
             alt="Sunny"
           />
-          6° F | C
+
+          <span className="temperature">6</span>
+          <span className="unit">° F | C</span>
         </div>
         <div className="col-6">
           <ul>
