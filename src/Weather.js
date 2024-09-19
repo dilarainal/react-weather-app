@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Puff } from "react-loader-spinner";
 import FormattedDate from "./FormattedDate";
 import "./Weather.css";
 
@@ -75,6 +76,16 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "Loading..";
+    return (
+      <Puff
+        visible={true}
+        height="80"
+        width="80"
+        color="orange"
+        ariaLabel="puff-loading"
+        wrapperStyle={{}}
+        wrapperClass=""
+      />
+    );
   }
 }
