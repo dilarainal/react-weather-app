@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import { Puff } from "react-loader-spinner";
+import { FallingLines } from "react-loader-spinner";
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
@@ -47,8 +47,7 @@ export default function Weather(props) {
               <input
                 type="search"
                 placeholder="Enter a city.."
-                className="form-control"
-                autoFocus="on"
+                className="form-control Search"
                 onChange={handleCity}
               />
             </div>
@@ -56,7 +55,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100"
+                className="btn btn-primary w-100 Search"
               />
             </div>
           </div>
@@ -72,14 +71,11 @@ export default function Weather(props) {
   } else {
     search();
     return (
-      <Puff
+      <FallingLines
+        color="#FFB36C"
+        width="100"
         visible={true}
-        height="80"
-        width="80"
-        color="orange"
-        ariaLabel="puff-loading"
-        wrapperStyle={{}}
-        wrapperClass=""
+        ariaLabel="falling-circles-loading"
       />
     );
   }
