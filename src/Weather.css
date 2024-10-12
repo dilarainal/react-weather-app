@@ -1,14 +1,28 @@
 .Weather {
-  background: linear-gradient(
-    179.5deg,
-    rgb(255, 241, 149) 3.3%,
-    rgb(255, 177, 108) 96%
-  );
-  border: 1px solid #fecf7e;
+  background: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  border: 1px solid #81b1e9;
   border-radius: 5px;
   font-family: arial;
   color: #959595;
   padding: 15px;
+}
+
+.Search {
+  border: 1px solid #81b1e9;
+  border-radius: 8px;
+}
+
+.btn {
+  background: #81b1e9;
+  border: 1px solid #81b1e9;
+  border-radius: 8px;
+  color: rgb(78, 78, 78);
+}
+
+.btn:hover {
+  background: #d9e7f9;
+  border: 1px solid #81b1e9;
+  color: rgb(78, 78, 78);
 }
 
 .Weather h1 {

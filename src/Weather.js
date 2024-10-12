@@ -55,7 +55,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 value="Search"
-                className="btn btn-primary w-100 Search"
+                className="btn w-100 Search"
               />
             </div>
           </div>
@@ -72,7 +72,7 @@ export default function Weather(props) {
     search();
     return (
       <FallingLines
-        color="#FFB36C"
+        color="#81b1e9"
         width="100"
         visible={true}
         ariaLabel="falling-circles-loading"
